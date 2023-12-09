@@ -47,3 +47,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 --------------------------------------------------------------------STEDP BR STEP:
 1 - npx create-react-app . --template typescript
+2 - npm install react-router-dom
+3 - npm install firebase => before that you need to create a project at firebase.google.com and create a server called app to create after a auth method
+4 - npm install react-firebase-hooks
