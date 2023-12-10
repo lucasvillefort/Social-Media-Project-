@@ -6,7 +6,7 @@ export const Login = () => {
   const navigate = useNavigate();
   const signInWithGoogle = async () => {
     await signInWithPopup(auth, provider);
-    navigate("/");
+    navigate("/post");
   };
 
   return (
