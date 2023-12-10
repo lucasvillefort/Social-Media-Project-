@@ -50,3 +50,18 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 2 - npm install react-router-dom
 3 - npm install firebase => before that you need to create a project at firebase.google.com and create a server called app to create after a auth method
 4 - npm install react-firebase-hooks
+5 - create a firebase Database in https://console.firebase.google.com/u/0/project/social-media-project-1ad53/firestore
+6 - npm install react-hook-form
+7 - npm install yup @hookform/resolvers
+8 - config at firebase site database: at rules:
+
+rules_version = '2';
+
+service cloud.firestore {
+match /databases/{database}/documents {
+match /{document=\*\*} {
+allow write, delete, update: if request.auth != null && request.auth.uid == request.resource.data.userId;
+allow read: if request.auth != null;
+}
+}
+}
