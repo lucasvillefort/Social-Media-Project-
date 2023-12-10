@@ -38,11 +38,11 @@ export const CreateForm = () => {
       <input placeholder="Title..." {...register("title")} />
 
       {errors.title && <p style={{ color: "red" }}>{errors.title?.message}</p>}
-      <br />
+
       <textarea placeholder="Description..." {...register("description")} />
       {errors.description && <p style={{ color: "red" }}>{errors.description?.message}</p>}
-      <br />
-      <input type="submit" />
+
+      <input type="submit" className="submitForm" />
     </form>
   );
 };
